@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Page 4</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="page2.html">Services</a> |
+            <a href="page3.html">Contact Us</a>
+            <a href="page4.html">Gallery</a>
+            
+        </nav>
+        
+        <main>
+            <section>
+                <h2></h2>
+                <p></p>
+
+              
+<!-- <li id="photo1"><img src="images/winterland1.jpg" alt="Winterland 1"></li>
+<li id="photo2"><img src="images/winterland2.jpg" alt="Winterland 2"></li>
+<li id="photo3"><img src="images/winterland3.jpg" alt="Winterland 3"></li>
+<li id="photo4"><img src="images/winterland4.jpg" alt="Winterland 4"></li>
+<li id="photo5"><img src="images/winterland5.jpg" alt="Winterland 5"></li>
+<li id="photo6"><img src="images/winterland6.jpg" alt="Winterland 6"></li> -->
+                
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Our Company. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+
+let fileNames = [];
+for (let i = 1; i <= 6; i++) {
+    fileNames.push("winterland" + i + ".jpg");
+}
+
+let gallery = document.createElement("ul");
+fileNames.forEach(function(file) {
+    let listItem = document.createElement("li");
+    listItem.setAttribute("id", "photo");
+    let image = document.createElement("img");
+    image.setAttribute("src", "images/" + file);
+    listItem.appendChild(image);
+    gallery.appendChild(listItem);
+});
+document.body.appendChild(gallery);
+
+    </script>
+</body>
+</html>

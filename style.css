@@ -75,3 +75,13 @@ button {
     margin-top: 10px;
     width: 100px;
 }
+
+#photo {
+    display: inline-block;
+    margin: 10px;
+}
+
+#photo img {
+    width: 300px;
+    height: auto;
+}
